@@ -58,7 +58,7 @@ nav ul li a img {width: 30px;
 nav ul li a:hover {
     color: #ff6347;
 }
-
+.active{color:#ff8b00; }
 .menu-toggle {
     display: none;
 }
@@ -150,10 +150,10 @@ form {width: 40%; border-radius: 20px;
   padding: 10px 10px 0 10px; box-sizing:border-box;
   }
   form p input{  width: 100%;border: 1px solid #d8d8d8; border-radius:10px; padding:10px; box-sizing:border-box; }
-  form p strong { display: block;
-    width: 100%;;
-  }
+  form p strong { display: block; width: 100%;; }
   form p.mitad { width:50% }
+
+
 @media (max-width: 768px) {
     nav .logo { width: 250px;  }
     nav ul {
