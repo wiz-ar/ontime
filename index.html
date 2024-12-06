@@ -7,60 +7,200 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <nav>
+    <nav id="navbar">
         <a href="#inicio"><img src="images/ontime_BPO_logo.svg" class="logo" alt="ontime BPO"></a>
-        <button class="menu-toggle" onclick="toggleMenu()">Menú</button>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </button>
         <ul id="menu">
-            <li><a href="#nosotros">Nosotros <img src="images/iso.svg" alt="Nosotros"></a></li>
-            <li><a href="#servicios">Servicios <img src="images/iso.svg" alt="Servicios"></a></li>
-            <li><a href="#contacto">Contacto <img src="images/iso.svg" alt="Contacto"></a></li>
-            <li><a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a></li>
-            <li><a href="#"><img src="images/instagram.svg" alt="Instagram"></a></li>
+            <li><a href="#nosotros" onclick="toggleMenu()">Nosotros <img src="images/iso.svg" alt="Nosotros"></a></li>
+            <li><a href="#servicios" onclick="toggleMenu()">Servicios <img src="images/iso.svg" alt="Servicios"></a></li>
+            <li><a href="#contacto" onclick="toggleMenu()">Contacto <img src="images/iso.svg" alt="Contacto"></a></li>
+            <li><a href="#" onclick="toggleMenu()"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="#" onclick="toggleMenu()"><img src="images/instagram.png" alt="Instagram"></a></li>
         </ul>
         </ul>
     </nav>
 
     <section id="inicio">
-        <h1>Transformar tu negocio</h1>
-        <p>Conectar talento humano con tecnología para crear valor.</p>
+        <div class="somos">
+            <img src="images/somos_transformacion.svg" alt="Somos Transformaci&oacute;n - talento + Tecnolog&iacute;a">
+        </div>
+        <div class="somos">
+            <img src="images/imagen_somos.jpg" alt="Somos Transformaci&oacute;n - talento + Tecnolog&iacute;a">
+        </div>   
     </section>
 
     <section id="nosotros">
-        <h2>Nosotros</h2>
-        <p>Estar a la vanguardia, incorporar innovaciones que mejoren tus resultados.</p>
+    <div class="slider-container">
+        <div class="slider" id="slider1">    
+            <div class="cajanosotros transformar">
+                <h2>Transformar tu negocio</h2>
+                <h3>Conectar talento humano con tecnología</h3>
+                <img src="images/transformar.jpg" alt="Qué hacemos" class="imgservicio">
+                <p>Somos un equipo con más de 10 años de experiencia en liderar cambios continuos. Colaboramos con grandes empresas, Pymes y Startups, ayudándoles a potenciar sus capacidades y superar sus desafíos.Nuestra misión es clara: integrar talento humano y tecnología para maximizar la eficiencia y alcanzar el máximo potencial de tu negocio.</p>
+                <p><strong>Trabajamos a la par tuyo. Cerca. Siempre.</strong></p>
+            </div>
+
+            <div class="cajanosotros vanguardia">
+                <h2>Estar a la Vanguardia</h2>
+                <h3>Incorporar innovaciones que mejoran tus resultados</h3>
+                <img src="images/vanguardia.jpg" alt="Qué hacemos" class="imgservicio">
+                <p>Mercados más exigentes en un mundo cada vez más conectado significan nuevos desafíos pero también más oportunidades para tu negocio. Hay que llegar antes y estar listos a tiempo. <strong>La Actitud OnTime</strong> consiste en adelantarse a los cambios, estar listos para actuar y poner a tu disposición las herramientas y habilidades necesarias para mantenerte a la vanguardia.</p>
+            </div>
+
+            <div class="cajanosotros cambiar">
+                <h2>Cambiar para crecer</h2>
+                <h3 style="text-align: center;">Nuestra filosofía de trabajo</h3>
+                <img src="images/cambiar.jpg" alt="Qué hacemos" class="imgservicio">
+                <p>El cambio es la base del crecimiento. Adaptarse y transformarse en el momento justo no solo abre puertas, sino que impulsa a tu organización hacia nuevas etapas de desarrollo. Por eso, diseñamos planes de acción basados en diagnósticos exhaustivos, ajustados a las necesidades específicas de tu empresa.<br>
+                    Con un enfoque centrado en resultados medibles, optimizamos cada proceso para que cada paso dado sea un avance hacia tus objetivos estratégicos.</p>
+            </div>
+        </div>
+        <button class="button prev" id="prevBtn1"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <button class="button next" id="nextBtn1"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
     </section>
 
     <section id="servicios">
-        <h2>Servicios</h2>
-        <p>Ofrecemos tecnología avanzada para transformar tu negocio.</p>
-    </section>
+        <div class="cajaservicios">
+            <h2>Qué hacemos</h2>
+            <div class="content">
+                <p style="margin: 10px 0 30px;">Colaboramos con las áreas de <strong style="font-weight: bolder;">Administración, Contabilidad, Finanzas y Recursos Humanos</strong> para optimizar y automatizar sus procesos operativos</p>
+                <img src="images/tecnologia-talento.png" alt="Talento + Tecnolog&iacute;a" style="max-width:90%">
+            </div>
+            <img src="images/que_hacemos.jpg" alt="Qué hacemos" class="imgservicio">
+        </div>
+<div class="slider-container">
+        <div class="slider" id="slider2">    
+            <div class="cajanosotros tecnologia">
+                <h2>Tecnología</h2>
+               
+                <p>Ofrecemos soluciones personalizadas utilizando herramientas avanzadas de RPA e IA para transformar tus operaciones y maximizar los resultados.</p>
+                <p>Al elegir nuestras soluciones, obtendrás:</p>
+                 <img src="images/tecnologia.svg" alt="Tecnología" class="imgservicio">
+            </div>
+
+            <div class="cajanosotros talento">
+                <h2>Talento</h2>
+                <img src="images/servicios_talento.jpg" alt="Talento" class="imgservicio">
+                <p>Conectamos tus procesos con un equipo de especialistas altamente calificados para su ejecución y optimización, con el objetivo de impulsar tus resultados y liberar el potencial humano de tu organización para enfocarse en la innovación y el crecimiento.</p>
+                <p>Estamos aquí para acompañarte en la capacitación de tu personal, el desarrollo de habilidades críticas y el reclutamiento de talentos clave. </p>
+            </div>
+
+            <div class="cajanosotros procesos">
+                <img src="images/transformamos.svg" alt="Transformamos Procesos" class="transformamos" >
+                <img src="images/servicios_tecnologia.jpg" alt="Impulsamos resultados" class="imgservicio">
+            </div>
+        </div>
+        <button class="button prev" id="prevBtn2"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <button class="button next" id="nextBtn2"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+    </div>              
+  </section>
 
     <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Dirección de Email: contacto@empresa.com</p>
+        <h2>Sumate a la Transformación</h2>
+        <div>
+            <p>Porque crecer es parte de nuestra esencia, nos entusiasma ayudar a nuevas organizaciones a avanzar en un camino de transformación y crecimiento.</p>
+            <h3>Esperamos tu contacto.</h3>
+        </div>
+
+            <form action="respuesta.php" method="get" >
+                <p class="mitad"><strong>Nombre:</strong>
+            <input type="text" name="nombre" required ></p>
+
+            <p class="mitad"><strong>Apellido:</strong>
+            <input type="text" name="apellido" required ></p>
+        
+        <p><strong>Dirección de Email:</strong> 
+            <input type="email" name="email" required></p>
+        
+        <p><strong>Motivo de su Consulta:</strong>
+            <input type="text" name="motivo"></p>
+        
+        <p><strong>Consulta:</strong> 
+            <input type="text" name="consulta"></p>
+
+        <p> <br><input type="submit" name="btnenvio" value="Enviar" class="botonenvio"></p>
+            </form>
     </section>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('show');
-        }
+ <script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('show');
+    }
 
-        document.querySelectorAll('nav ul li a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-                window.scrollTo({
-                    top: targetSection.offsetTop - 50,
-                    behavior: 'smooth'
-                });
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            window.scrollTo({
+                top: targetSection.offsetTop - 50,
+                behavior: 'smooth'
             });
         });
+    });
+
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 100) {
+            navbar.classList.add('shrink');
+        } else {
+            navbar.classList.remove('shrink');
+        }
+    });
+</script>
+<script>
+        function createSlider(sliderId, prevBtnId, nextBtnId) {
+            const slider = document.getElementById(sliderId);
+            const slides = slider.querySelectorAll('.cajanosotros');
+            const totalSlides = slides.length;
+            let currentIndex = 0;
+
+            const nextBtn = document.getElementById(nextBtnId);
+            const prevBtn = document.getElementById(prevBtnId);
+
+            nextBtn.addEventListener('click', () => {
+                moveToNextSlide();
+                resetInterval();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                moveToPrevSlide();
+                resetInterval();
+            });
+
+            function moveToNextSlide() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateSliderPosition();
+            }
+
+            function moveToPrevSlide() {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateSliderPosition();
+            }
+
+            function updateSliderPosition() {
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            function resetInterval() {
+                clearInterval(slideInterval);
+                slideInterval = setInterval(moveToNextSlide, 24000);
+            }
+
+            let slideInterval = setInterval(moveToNextSlide, 24000);
+        }
+
+        createSlider('slider1', 'prevBtn1', 'nextBtn1');
+        createSlider('slider2', 'prevBtn2', 'nextBtn2');
     </script>
 </body>
 </html>
