@@ -52,6 +52,7 @@ nav ul li a:hover {     color: #ff6347;}
 .active{color:#ff8b00; }
 .menu-toggle { display: none;}
 
+img { max-width:100% }
 .whatsapp {
     position: fixed;
     font-size: 70px;
