@@ -20,7 +20,7 @@ body {
     background-color: #FFF;
 }
 header {position: fixed; width: 100%; top: 0; left: 0; z-index: 1000;background-color: #FFF;}
-nav {    max-width: 1920px;
+nav { max-width: 1920px; margin: auto;
     display: flex;align-items: flex-end;
     justify-content: space-between;
     
@@ -65,7 +65,7 @@ nav ul li a:hover {     color: #ff6347;}
 .whatsapp a:hover { color: #FFF;
     background-color: #009688; transition: all .5s}
 
-section { text-align: right; position: relative; }
+section { text-align: center; }
 
 h2 { color:#ff8b00; font-size:38px; width:100%; font-weight: bolder;line-height: 1.1;}
 
@@ -79,10 +79,11 @@ h2 { color:#ff8b00; font-size:38px; width:100%; font-weight: bolder;line-height:
 #servicios {  }
 
 #inicio {}
-.somos {position:absolute; display:flex; top:0;left:120px;width: 100%;height: 100%; }
-.somos img { max-width: 770px; width: 100%;}
 
+.desktop { max-width:1920px; width:100% }
+.imgservicio {display: none;}
 
+.cajanosotros h2,.cajanosotros h3, .cajanosotros p{display: none;}
 
 .button { position: absolute; bottom: 10%; transform: translateY(-50%); color: #fff; border: none; padding: 10px; cursor: pointer; z-index: 1;  background-color: transparent;}
 .button i {color: #999;font-size: 40px;text-shadow: 1px 1px 2px #000;opacity: 0.5;}
@@ -97,7 +98,7 @@ form p.mitad { width:50% }
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     nav .logo { width: 250px;  }
     nav ul { display: none; flex-direction: column; position: absolute; top: 94px; width: 100%; left: 0; background-color: #FFF; }
@@ -115,9 +116,10 @@ form p.mitad { width:50% }
     #servicios,.transformar, .vanguardia, .cambiar, .procesos, .tecnologia, .tecnologia, .talento, .cajaservicios  {background-image:none;display:block;}
     #servicios .content{ width: 100%; }
     .transformamos {width: 100%;}
+    .cajanosotros h2,.cajanosotros h3, .cajanosotros p{display: block;}
+
     .cajanosotros p { width: 100%; padding: 0 10px;} 
     .cajanosotros h3 {  width: 100%; margin: 20px 0; text-align:center; }
-    .imgservicio { display:block; margin:5px auto 40px; width: 100%; }
     .button { bottom: 0;}
 
 }
