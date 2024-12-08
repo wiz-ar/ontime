@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+<header>
     <nav id="navbar">
         <a href="#inicio"><img src="images/ontime_BPO_logo.svg" class="logo" alt="ontime BPO"></a>
         <button class="menu-toggle" onclick="toggleMenu()">
@@ -38,14 +38,13 @@
             
         </ul>
     </nav>
+</header>
 <span class="whatsapp"><a href="https://api.whatsapp.com/send?phone= +5491141870713&text=Hola,%20quisiera%20informaci%C3%B3n%20sobre..." target="_blank"><i class="fa fa-whatsapp"></i></a></span>
     <section id="inicio">
+        <img src="backs/home.jpg" alt="Somos Transformaci&oacute;n - talento + Tecnolog&iacute;a">
         <div class="somos">
             <img src="images/somos_transformacion.svg" alt="Somos Transformaci&oacute;n - talento + Tecnolog&iacute;a">
         </div>
-        <div class="somos">
-            <img src="images/imagen_somos.jpg" alt="Somos Transformaci&oacute;n - talento + Tecnolog&iacute;a">
-        </div>   
     </section>
 
     <section id="nosotros">
@@ -169,50 +168,5 @@
         }
     });
 </script>
-<script>
-        function createSlider(sliderId, prevBtnId, nextBtnId) {
-            const slider = document.getElementById(sliderId);
-            const slides = slider.querySelectorAll('.cajanosotros');
-            const totalSlides = slides.length;
-            let currentIndex = 0;
-
-            const nextBtn = document.getElementById(nextBtnId);
-            const prevBtn = document.getElementById(prevBtnId);
-
-            nextBtn.addEventListener('click', () => {
-                moveToNextSlide();
-                resetInterval();
-            });
-
-            prevBtn.addEventListener('click', () => {
-                moveToPrevSlide();
-                resetInterval();
-            });
-
-            function moveToNextSlide() {
-                currentIndex = (currentIndex + 1) % totalSlides;
-                updateSliderPosition();
-            }
-
-            function moveToPrevSlide() {
-                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-                updateSliderPosition();
-            }
-
-            function updateSliderPosition() {
-                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-            }
-
-            function resetInterval() {
-                clearInterval(slideInterval);
-                slideInterval = setInterval(moveToNextSlide, 24000);
-            }
-
-            let slideInterval = setInterval(moveToNextSlide, 24000);
-        }
-
-        createSlider('slider1', 'prevBtn1', 'nextBtn1');
-        createSlider('slider2', 'prevBtn2', 'nextBtn2');
-    </script>
 </body>
 </html>
