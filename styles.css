@@ -66,15 +66,16 @@ img { max-width:100% }
 .whatsapp a:hover { color: #FFF;
     background-color: #009688; transition: all .5s}
 
-section { text-align: center; }
+section { text-align: center; max-width:1920px; margin:auto; }
 
 h2 { color:#ff8b00; font-size:38px; width:100%; font-weight: bolder;line-height: 1.1;}
 
 #contacto {
     background-color: #e7ecef; background-image: url(images/contacto.jpg);background-size:  50%; background-repeat: no-repeat; background-position: left 40px; display: flex;  flex-flow: wrap; justify-content: flex-end; padding: 60px 20px 110px;
 }
-#contacto div{ width: 28%;  margin: 30px 5% 0 0;}
-#contacto div p { line-height:1.5; margin: 10px 0; }
+#contacto div{ width: 28%;  margin: 30px 5% 0 0;text-align: left;}
+#contacto div p { line-height:1.5; margin: 10px 0; font-size:18px }
+#contacto div h3 { line-height:1.5; margin: 10px 0; font-weight: bolder; font-size: 20px;}
 
 
 #servicios {  }
@@ -91,12 +92,14 @@ h2 { color:#ff8b00; font-size:38px; width:100%; font-weight: bolder;line-height:
 .button.prev { left: 10px; }
 .button.next { right: 10px;}
 
-form {width: 40%; border-radius: 20px;  border: 1px solid #000;  padding: 10px;  background-color: #FFF;  display: flex;  flex-flow: wrap;}
+form {width: 40%; border-radius: 20px;  border: 1px solid #000;  padding: 10px;  background-color: #FFF;  display: flex;  flex-flow: wrap;text-align: left;}
 form p { width: 100%; margin: 0;  padding: 10px 10px 0 10px; box-sizing:border-box;  }
 form p input{  width: 100%;border: 1px solid #d8d8d8; border-radius:10px; padding:10px; box-sizing:border-box; }
 form p strong { display: block; width: 100%;; }
 form p.mitad { width:50% }
 
+footer { background-color:#c2d8ff; text-align:center; display:flex; justify-content:center; align-items:center; }
+footer img { display: block; width: 250px; margin: 5px}
 
 
 @media (max-width: 1024px) {
@@ -112,20 +115,21 @@ form p.mitad { width:50% }
 
     .menu-toggle { display: block; color: #0f4096; border: none; padding: 10px; font-size: 30px; cursor: pointer; background-color: transparent; }
     section { min-height: auto; padding:0  }
-    #inicio {  padding: 110px 10px 10px ;}
 
     .somos { width: 100%; margin: 0;}
-    #contacto { background-color: #e7ecef; background-size:  100% auto ; background-repeat: no-repeat; background-position: left top; display: flex; flex-flow: wrap; }
+    #contacto {  background-size:  100% auto ; background-repeat: no-repeat; background-position: left top; display: flex; flex-flow: wrap; }
     form p.mitad, form { width:100% }
     #contacto div { width: 100%; margin: 10px;}
     #servicios,.transformar, .vanguardia, .cambiar, .procesos, .tecnologia, .tecnologia, .talento, .cajaservicios  {background-image:none;display:block;}
     #servicios .content{ width: 100%; }
     .transformamos {width: 100%;}
     .cajanosotros { margin: 30px 0 }
-    .cajanosotros h2,.cajanosotros h3, .cajanosotros p{display: block; padding: 10px}
+    .cajanosotros h2,.cajanosotros h3, .cajanosotros p {display: block; padding: 10px; text-align: left;}
 
-    .cajanosotros p { width: 100%; padding: 0 10px;} 
-    .cajanosotros h3 {  width: 100%; margin: 20px 0; text-align:center; }
+    .cajanosotros p { width: 100%; padding: 20px 10px; text-align: left;} 
+    .cajanosotros h3 {  width: 100%; margin: 0; text-align: left; padding: 0 10px;}
     .button { bottom: 0;}
+    footer { text-align:center; display:block;padding: 20px 0;}
+    footer img { display: block; width: 200px; margin: 5px auto}
 
 }
