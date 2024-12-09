@@ -79,7 +79,7 @@ h2 { color:#ff8b00; font-size:38px; width:100%; font-weight: bolder;line-height:
 
 #servicios {  }
 
-#inicio {}
+#inicio { margin-top: 160px;}
 
 .desktop { max-width:1920px; width:100% }
 .imgservicio {display: none;}
