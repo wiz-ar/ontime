@@ -129,7 +129,7 @@ footer img { display: block; width: 250px; margin: 5px}
     .cajanosotros p { width: 100%; padding: 20px 10px; text-align: left;} 
     .cajanosotros h3 {  width: 100%; margin: 0; text-align: left; padding: 0 10px;}
     .button { bottom: 0;}
-    footer { text-align:center; display:block;padding: 20px 0;}
+    footer { text-align:center; display:block;padding: 20px 0 100px;}
     footer img { display: block; width: 200px; margin: 5px auto}
 
 }
